@@ -31,3 +31,10 @@ npm start (or yarn start)
 * hot reloading: when you change a source file, automatically reloads
   - is very clever and tries to only reload relevant files
 * enables easy testing and deployment
+
+# Modules: Import and Exports
+
+- Modules
+  CRA uses ES2015 "modules"; this is a newer standardized version of Node's require()
+
+You use this to export/import classes/data/functions between JS files
