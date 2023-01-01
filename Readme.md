@@ -38,3 +38,11 @@ npm start (or yarn start)
   CRA uses ES2015 "modules"; this is a newer standardized version of Node's require()
 
 You use this to export/import classes/data/functions between JS files
+
+a way of sharing code functions objects classes between JS files
+
+# To Default Export or Not?
+
+- conventionally, defualt exports are used when there's a most-likely thing to export
+- e.g. in a react component file, its common to have the component be the default export
+- you never need to make a default export, but it can be helpful to indicate the most important thing in a file
