@@ -62,3 +62,44 @@ should be capitalized
 
 - skeleton assumes top object is App in App.js
   - best to keep this
+
+# Assets and CRA - like CSS and images
+
+to include images and CSS, you can import them in JS files
+
+# CSS
+
+- make the CSS file the same name as each React component
+  - House.css for House componenet
+- import it at the top of House.js
+
+  - create-react-app will automatically load that CSS
+
+- conventional to add 'className="House"' onto House div
+
+  - and use that as prefix for sub-items to style:
+
+  ```
+  <div className="House" >
+   <p className="House-title">{this.props.title}</p>
+    <p className="House-address">{this.props.addr}</p>
+  ```
+
+# Images
+
+- store images in src/folder with the components
+- load them where needed, and use imported name where path should go:
+
+```
+import puppy from "./puppy.jpg";
+
+class Animal extends React.Component {
+  render() {
+    return(
+      <div>
+      <img src={puppy} alt="Cute puppy!" />
+      </div>
+    )
+  }
+}
+```
