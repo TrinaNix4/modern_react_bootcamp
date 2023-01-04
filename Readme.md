@@ -46,3 +46,19 @@ a way of sharing code functions objects classes between JS files
 - conventionally, defualt exports are used when there's a most-likely thing to export
 - e.g. in a react component file, its common to have the component be the default export
 - you never need to make a default export, but it can be helpful to indicate the most important thing in a file
+
+# Create React App Conventions
+
+- Good style: each react component goes in separate file
+  - src/Car.js for Car component
+  - src/House.js for House component
+
+name of file should match name of the component;
+should be capitalized
+
+- components should extends Componenet (imported from React)
+
+  - export the component as the default object
+
+- skeleton assumes top object is App in App.js
+  - best to keep this
